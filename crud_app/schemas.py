@@ -8,7 +8,7 @@ class BookCreate(BaseModel):
     year: int
     isbn: str
  
-# Complete Book Schema (Pydantic Model)
+
 class Book(BaseModel):
     id: int
     title: str
@@ -16,7 +16,7 @@ class Book(BaseModel):
     year: int
     isbn: str
 
-# Pydantic model for updating a book
+
 class BookUpdate(BaseModel):
     title: Optional[str] = Field(None, title="Title of the book")
     author: Optional[str] = Field(None, title="Author of the book")
