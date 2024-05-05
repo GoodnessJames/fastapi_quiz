@@ -1,5 +1,5 @@
 # FastAPI CRUD Application
-A simple CRUD (Create, Read, Update, Delete) application built with FastAPI and SQLAlchemy. It allows managing a collection of books in a database.
+A simple CRUD (Create, Read, Update, Delete) application built with FastAPI and SQLAlchemy that allows managing a collection of books in a database.
 
 ## Requirements
 Python 3.7+
