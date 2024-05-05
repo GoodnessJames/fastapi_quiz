@@ -56,5 +56,5 @@ Pydantic: Data validation and settings management using Python type annotations.
 
 uvicorn: ASGI server for running FastAPI applications.
 
-## Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+## Contributions
+Feel free to open an issue or submit a pull request.
