@@ -3,6 +3,7 @@ A simple CRUD (Create, Read, Update, Delete) application built with FastAPI and 
 
 ## Requirements
 Python 3.7+
+
 Pip (Python package manager)
 
 ## Installation
