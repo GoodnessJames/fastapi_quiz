@@ -3,11 +3,10 @@ from typing import Optional
 
  
 class BookCreate(BaseModel):
- """
-    Schema representing a book.
+    """
+    Schema for creating a new book.
 
     Attributes:
-        id (int): The unique identifier for the book.
         title (str): The title of the book.
         author (str): The author of the book.
         year (int): The year of publication of the book.
@@ -20,7 +19,25 @@ class BookCreate(BaseModel):
  
 
 class Book(BaseModel):
- """
+    """
+    Schema representing a book.
+
+    Attributes:
+        id (int): The unique identifier for the book.
+        title (str): The title of the book.
+        author (str): The author of the book.
+        year (int): The year of publication of the book.
+        isbn (str): The ISBN (International Standard Book Number) of the book.
+    """
+    id: int
+    title: str
+    author: str
+    year: int
+    isbn: str
+
+
+class BookUpdate(BaseModel):
+    """
     Schema for updating book information.
 
     Attributes:
@@ -32,14 +49,6 @@ class Book(BaseModel):
     Config:
         orm_mode (bool): Allows to use this Pydantic model with ORM.
     """
-    id: int
-    title: str
-    author: str
-    year: int
-    isbn: str
-
-
-class BookUpdate(BaseModel):
     title: Optional[str] = Field(None, title="Title of the book")
     author: Optional[str] = Field(None, title="Author of the book")
     year: Optional[int] = Field(None, title="Year of publication")
